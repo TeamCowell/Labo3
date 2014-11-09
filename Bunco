@@ -24,7 +24,7 @@ public class Bunco extends FrameworkJeu {
 		
 		
 	}
-	protected  void creationStrat(){
+	protected  void creerStrategie(){
 		
 	}
 	
