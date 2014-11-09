@@ -1,6 +1,6 @@
 
 public class Bunco extends FrameworkJeu {
-	vagina is the best
+	
 	int nbTours;
 	
 	public Bunco(){
