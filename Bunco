@@ -24,6 +24,7 @@ public class Bunco extends FrameworkJeu {
 		
 	}
 	protected  void creerStrategie(){
+		StrategieJeu stratCalcul = new StrategieBunco();
 	
 	}
 	
