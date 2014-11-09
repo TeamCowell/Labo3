@@ -1,0 +1,33 @@
+
+public class Bunco extends FrameworkJeu {
+	
+	int nbTours;
+	
+	public Bunco(){
+		creationJeu();
+		
+	}
+
+	public void jouerTour() {
+		
+		
+	}
+
+	
+	protected void creerJoueur() {
+		
+		
+	}
+
+	
+	protected void creerDes() {
+		
+		
+	}
+	protected  void creationStrat(){
+		
+	}
+	
+
+	
+}
