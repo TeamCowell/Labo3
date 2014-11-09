@@ -1,6 +1,6 @@
 
 public class Bunco extends FrameworkJeu {
-	soccer
+	basket
 	int nbTours;
 	
 	public Bunco(){
@@ -25,7 +25,7 @@ public class Bunco extends FrameworkJeu {
 		
 	}
 	protected  void creerStrategie(){
-		
+	
 	}
 	
 
