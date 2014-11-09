@@ -7,7 +7,7 @@ public class Bunco extends FrameworkJeu {
 		
 	}
 
-	public void jouerTour() {
+	public void jouerPartie() {
 		
 		
 	}
