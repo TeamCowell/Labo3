@@ -1,6 +1,6 @@
 
 public class Bunco extends FrameworkJeu {
-	basket soccder
+	basket soccder yolo swag
 	int nbTours;
 	
 	public Bunco(){
