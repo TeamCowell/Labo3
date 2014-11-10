@@ -33,13 +33,15 @@ public class Bunco extends FrameworkJeu {
 	}
 	
 	protected void creerJoueur() {
-		
-		
+		int nbJoueurs;
+		collectionDes = FabriqueCollections.fabriqueCollectionJoueurs(nbJoueurs);
 	}
 
 	
 	protected void creerDes() {
-		
+		int nbDe;
+		int nbFaces;
+		collectionDes = FabriqueCollections.fabriqueCollectionDes(nbDe, nbFaces);
 		
 	}
 	protected  void creerStrategie(){
