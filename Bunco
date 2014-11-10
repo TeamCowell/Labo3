@@ -1,6 +1,7 @@
 
 public class Bunco extends FrameworkJeu {
-	int nbTours;
+	private final int NOMBRE_TOUR = 4;
+	private int nbTours;
 	
 	public Bunco(){
 		creationJeu();
@@ -8,7 +9,18 @@ public class Bunco extends FrameworkJeu {
 	}
 
 	public void jouerPartie() {
+		public boolean partieTerminer = false;
 		
+		if(iterateurJoueur.hasNext() == false){
+			while((partieTerminer == false) && (nbTours < NOMBRE_TOUR){
+				
+			}
+			
+		
+		}
+		else{
+			System.Out.println("Une erreur s'est produite : il n'y a pas de joueur dans la collection");
+		}
 		
 	}
 
