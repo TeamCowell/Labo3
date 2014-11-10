@@ -15,8 +15,7 @@ public class Bunco extends FrameworkJeu {
 		
 		if(iterateurJoueur.hasNext() == false){
 			while((partieTerminer == false) && (nbTours < NB_TOUR){
-				this.effectuerTour();
-				
+				this.effectuerUnTour();
 				
 			}
 			
@@ -28,27 +27,27 @@ public class Bunco extends FrameworkJeu {
 		
 	}
 	
-	private void effectuerTour(){
+	private void effectuerUnTour(){
 		
-		//faire premier tour
+		//faire premier joueur
 		private boolean hasNext;
 		iterateurJoueur.first();
 		brasseurDes();
-		insererScore()
+		insererScore();
 			
 		while(stratCalcul.isRelancer()){
 			brasseurDes();
-			insererScore()
+			insererScore();
 		}
-		//faire les autres tours	
+		//faire les autres joueurs	
 		while(iterateurJoueur.hasNext()){
 			iterateurJoueur.next();
 			brasseurDes();
-			insererScore()
+			insererScore();
 			
 			while(stratCalcul.isRelancer()){
 			brasseurDes();
-			insererScore()
+			insererScore();
 			}
 		}
 		
