@@ -29,12 +29,14 @@ public class Bunco extends FrameworkJeu {
 	private void effectuerTour(){
 		for(int i = 0; i < collectionDes.size();i++){
 					collectionDes[i].brasser();
-				}
+		}
+		stratCalcul.calculerScoreTour(this);
 	}
 	
 	protected void creerJoueur() {
 		int nbJoueurs;
 		collectionDes = FabriqueCollections.fabriqueCollectionJoueurs(nbJoueurs);
+		
 	}
 
 	
