@@ -34,6 +34,13 @@ public class Bunco extends FrameworkJeu {
 		stratCalcul.calculerScoreTour(this);
 	}
 	
+	
+	
+	
+	
+	
+	
+	
 	protected void creerJoueur() {
 		int nbJoueurs;
 		collectionDes = FabriqueCollections.fabriqueCollectionJoueurs(nbJoueurs);
