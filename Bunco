@@ -29,24 +29,46 @@ public class Bunco extends FrameworkJeu {
 	}
 	
 	private void effectuerTour(){
-	
-			private int scoreTampon;
-			private boolean hasNext;
-			iterateurJoueur.first();
-			iterateurDes.first();
-			iterateurDes.brasser();
-			scoreTampon = iterateurJoueur.getScore() + stratCalcul.calculerScoreTour(this);
-			collectionJoueur.setScore(scoreTampon);
+		
+		//faire premier tour
+		private boolean hasNext;
+		iterateurJoueur.first();
+		brasseurDes();
+		insererScore()
 			
-			
+		while(stratCalcul.isRelancer()){
+			brasseurDes();
+			insererScore()
+		}
+		//faire les autres tours	
 		while(iterateurJoueur.hasNext()){
 			iterateurJoueur.next();
-			iterateurDes.next();
-			iterateurDes.brasser();
-			scoreTampon = iterateurJoueur.getScore() + stratCalcul.calculerScoreTour(this);
-			collectionJoueur.setScore(scoreTampon);
+			brasseurDes();
+			insererScore()
+			
+			while(stratCalcul.isRelancer()){
+			brasseurDes();
+			insererScore()
+			}
 		}
 		
+	}
+	
+	public void insererScore(){
+		private int scoreTampon;
+		scoreTampon = iterateurJoueur.getScore() + stratCalcul.calculerScoreTour(this);
+		collectionJoueur.setScore(scoreTampon);
+	
+	}
+	
+	public void brasseurDes(){
+			iterateurDes.first();
+			iterateurDes.brasser();
+			iterateurDes.next();
+			iterateurDes.brasser();
+			iterateurDes.next();
+			iterateurDes.brasser();
+	
 	}
 	
 	
