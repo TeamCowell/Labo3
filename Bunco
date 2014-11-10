@@ -1,7 +1,7 @@
 
 public class Bunco extends FrameworkJeu {
-	private final int NOMBRE_TOUR = 4;
-	private final int NOMBRE_LANCER = 3;
+	private final int NB_TOUR = 6;
+	private final int NB_DES_LANCES = 3;
 	private int nbTours;
 	
 	public Bunco(){
@@ -14,9 +14,9 @@ public class Bunco extends FrameworkJeu {
 		public boolean partieTerminer = false;
 		
 		if(iterateurJoueur.hasNext() == false){
-			while((partieTerminer == false) && (nbTours < NOMBRE_TOUR){
+			while((partieTerminer == false) && (nbTours < NB_TOUR){
 				this.effectuerTour();
-				stratCalcul.calculerScoreTour(this);
+				
 				
 			}
 			
@@ -29,10 +29,24 @@ public class Bunco extends FrameworkJeu {
 	}
 	
 	private void effectuerTour(){
-		for(int i = 0; i < NOMBRE_LANCER;i++){
-			collectionDes[i].brasser();
+	
+			private int scoreTampon;
+			private boolean hasNext;
+			iterateurJoueur.first();
+			iterateurDes.first();
+			iterateurDes.brasser();
+			scoreTampon = iterateurJoueur.getScore() + stratCalcul.calculerScoreTour(this);
+			collectionJoueur.setScore(scoreTampon);
+			
+			
+		while(iterateurJoueur.hasNext()){
+			iterateurJoueur.next();
+			iterateurDes.next();
+			iterateurDes.brasser();
+			scoreTampon = iterateurJoueur.getScore() + stratCalcul.calculerScoreTour(this);
+			collectionJoueur.setScore(scoreTampon);
 		}
-		stratCalcul.calculerScoreTour(this);
+		
 	}
 	
 	
